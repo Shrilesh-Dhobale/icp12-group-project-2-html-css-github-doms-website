@@ -1,0 +1,55 @@
+     .header {
+       height: 150px;
+       background-image: url('../../images/header_img.png');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       display: flex;
+       align-items: center;
+       justify-content: left;
+       padding-left: 40px;
+       border-radius: 15px;
+       margin-bottom: 40px;
+     }
+
+     .header h1 {
+       font-size: 36px;
+       color: #fff;
+       text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+     }
+
+     .sidebar {
+       padding: 20px;
+       width: 250px;
+    
+     }
+
+     .sidebar h4 {
+       color: #b0b0b0;
+       font-size: 14px;
+       font-weight: 600;
+       text-transform: uppercase;
+       margin-bottom: 15px;
+     }
+
+     .sidebar p {
+       margin: 15px 0;
+       font-size: 17px;
+       color: #222;
+     }
+
+     .sidebar p:hover {
+       color: #0073e6;
+       cursor: pointer;
+     }
+
+     @media (max-width: 900px) {
+       .product-grid {
+         grid-template-columns: repeat(2, 1fr);
+       }
+     }
+
+     @media (max-width: 600px) {
+       .product-grid {
+         grid-template-columns: 1fr;
+       }
