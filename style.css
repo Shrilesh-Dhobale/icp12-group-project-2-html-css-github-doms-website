@@ -1,0 +1,28 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      animation: backgroundColorChange 20s ease-in-out infinite;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    @keyframes backgroundColorChange {
+      0%   { background: #f3c1f3; }
+      25%  { background: #c1e0f3; }
+      50%  { background: #f3f3c1; }
+      75%  { background: #f3c1c1; }
+      100% { background: #f3c1f3; }
+    }
