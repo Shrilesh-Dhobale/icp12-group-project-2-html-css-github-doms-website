@@ -43,6 +43,11 @@
        cursor: pointer;
      }
 
+     .container img{
+      height: 300px;
+
+     }
+
      @media (max-width: 900px) {
        .product-grid {
          grid-template-columns: repeat(2, 1fr);
