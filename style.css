@@ -26,3 +26,19 @@
       75%  { background: #f3c1c1; }
       100% { background: #f3c1f3; }
     }
+    .logo{
+      position: absolute;
+        top:0;
+        left: 0;
+        padding:10px;
+    }
+    .logo-icon-smile{
+      height:20px;
+      width:20px;
+      padding-top:5px;
+        
+    }
+    .logo-text{
+      font-size: 20px;
+      font-weight: 100%;
+    }
