@@ -53,15 +53,21 @@
     align-items: center;
     padding: 15px;
     }
+    .main-container{
+      position: absolute;
+      top:-10px;
+    }
     .main-heading{
-      font-size: 150px;
+      font-size: 250px;
+      letter-spacing: -8px;
       display: flex;
       gap:5px;
       text-shadow: 4px 4px 10px rgba(0,0,0,0.6);
       
     }
     .main-quote{
-      font-family: ;
+      position: relative;
+      top:-20px;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 
     }
@@ -74,16 +80,28 @@
       
     }
     .pencil-icon{
-      height: 150px;
+      height: 200px;
       position: relative;
-      left:80px;
-      top:160px;
-      box-shadow: ;
-
+      left:5px;
+      top:270px;
+      rotate: -15deg;
+      animation: movePencil 1.5s ease-in-out infinite;
+    }
+    @keyframes movePencil{
+      0%{
+        top:270px;
+      }
+      50%{
+        top:290px;
+      }
+      100%{
+        top:270px;
+      }
     }
     .diary-icon{
       height: 80px;
       position: absolute;
-      top:280px;
-      left:500px;
+      top:120px;
+      left:-50px;
+      rotate: -20deg;
     }
