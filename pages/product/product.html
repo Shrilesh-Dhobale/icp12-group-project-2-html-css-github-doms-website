@@ -79,10 +79,38 @@
       padding: 10px;
     }
 
-.footer p {
-  text-align: center;
-  margin-top: 5%;
-}
+    .footer p {
+      text-align: center;
+      margin-top: 5%;
+    }
+
+    .shorts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      justify-items: center;
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+      margin: 40px auto;
+      max-width: 1200px;
+    }
+
+    .shorts iframe {
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+      max-width: 376px;
+      height: 669px;
+    }
+
+    .shorts iframe:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    }
+
 
     @media (max-width: 900px) {
       .product-grid {
@@ -161,7 +189,40 @@
     </div>
 
   </div>
+  <h2 style="text-align: center; margin-top: 40px;">Watch Our Highlights</h2>
+  <div class="shorts">
 
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/jlPKPaY4QEg"
+      title="Brighten up your notes with DOMS Highlighters – vibrant colours for every highlight!" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/rqhVZpnReVo"
+      title="DOMS Futuristic Home Series Notebook – Write the Future" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/JwppEPvYY_s"
+      title="DOMS | Sharpener Manufacturing Process | Always On Point" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/RRtIJyGXXdg"
+      title="Race Your Imagination with the DOMS Streetcar Series Notebooks" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/s156SKCQWGo"
+      title="Introducing the all-new DOMS Speedz Kit!" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/ni9mDwZbJXk"
+      title="DOMS at Paperworld Middle East 2024 | Discover Our Latest Innovations at Dubai World Trade Centre"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
   <footer class="footer">
     <p>© DOMS 2023. All Rights Reserved</p>
   </footer>
