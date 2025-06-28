@@ -1,0 +1,13 @@
+.logo{
+ display:flex;
+ flex-direction:row;
+ justify-content: center;
+}
+.p1{
+
+    text-align:start;
+    
+    margin: 10px 150px;
+    font-size: 20px;
+
+}
