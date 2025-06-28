@@ -7,7 +7,15 @@
 
     text-align:start;
     
-    margin: 10px 150px;
+    margin: 15px 150px;
     font-size: 20px;
 
+}
+.heading-1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.products-name{
+    color: rgb(6, 6, 176);
 }
