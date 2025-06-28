@@ -41,6 +41,7 @@
     .logo-text{
       font-size: 20px;
       font-weight: 100%;
+       text-shadow: 4px 4px 10px rgba(0,0,0,0.6);
     }
     .navbar{
       
@@ -70,15 +71,28 @@
       position: relative;
       top:-20px;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-
+      
     }
+    
+    
     .brush-icon{
       height:80px;
       display: block;
+      position: relative;
       margin-right: 500px;
       margin-top: -50px;
-  
-      
+      animation: moveBrush 1.5s ease-in-out infinite;
+    }
+    @keyframes moveBrush{
+      0%{
+        top:-50px;
+      }
+      50%{
+        top:-60px;
+      }
+      100%{
+        top:-50px;
+      }
     }
     .pencil-icon{
       height: 200px;
@@ -143,4 +157,7 @@
       position: relative;
       left:500px;
       top:-310px;
+    }
+    .note{
+      background-color: goldenrod;
     }
