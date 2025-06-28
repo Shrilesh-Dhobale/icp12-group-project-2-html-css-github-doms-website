@@ -104,4 +104,16 @@
       top:120px;
       left:-50px;
       rotate: -20deg;
+      animation: movediary 1.5s ease-in-out infinite;
+    }
+     @keyframes movediary{
+      0%{
+        top:120px;
+      }
+      50%{
+        top:140px;
+      }
+      100%{
+        top:120px;
+      }
     }
