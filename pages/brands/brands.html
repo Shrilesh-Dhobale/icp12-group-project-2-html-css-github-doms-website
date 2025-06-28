@@ -14,22 +14,20 @@
     }
 
     body {
-      background-color: #f7f7f7;
+      background: linear-gradient(to bottom, #f7f7f7 0%, #e9f2f7 100%);
       font-family: 'Inter', sans-serif;
       color: #222;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 10px;
       line-height: 1.7;
       font-size: 16px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-
-
+    
     h1, h2, h3 {
       text-align: center;
       font-weight: 600;
-      margin-top: 40px;
+      margin-top: 15px;
       color: #111;
       letter-spacing: 1px;
     }
@@ -48,7 +46,7 @@
 
     .brand-logo {
       display: block;
-      margin: 10px auto;
+      margin: 15px auto;
       max-width: 250px;
     }
 
@@ -73,11 +71,12 @@
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
+      transition: all 0.3s ease-in-out;
     }
 
     .sub-brand:hover {
-      transform: scale(1.02);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 120, 160, 0.2);
     }
 
     .sub-brand img {
@@ -96,22 +95,25 @@
 
     .intl-brands img {
       max-width: 200px;
-      transition: transform 0.3s;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
     }
 
     .intl-brands img:hover {
       transform: scale(1.1);
+      filter: brightness(1.1);
     }
 
     footer {
       text-align: center;
       padding: 30px 10px;
       font-size: 14px;
-      color: #777;
+      color: black;
       border-top: 1px solid #ddd;
       margin-top: 50px;
       font-style: italic;
       letter-spacing: 0.5px;
+      justify-content: center;
     }
 
     @media (max-width: 992px) {
@@ -126,25 +128,36 @@
       }
 
       .intl-brands img {
-        max-width: 80px;
+        max-width: 100px;
+      }
+
+      h1, h2, h3 {
+        font-size: 22px;
+      }
+
+      .brands-page p {
+        font-size: 15px;
+      }
+
+      .sub-brand {
+        padding: 15px;
       }
     }
   </style>
 </head>
 <body>
+ 
   <div class="brands-page">
     <h1>Brands</h1>
     <h2>Domestic Brands</h2>
 
     <h3 class="brand-title">DOMS</h3>
-   
     <img src="../../images/doms-logo.png" alt="DOMS Logo" class="brand-logo" />
     <p>
       ‘DOMS’ is our flagship brand. The products under the ‘DOMS’ brand are known for its premium quality and product designing. We sell all products in the scholastic stationery, scholastic art material, paper stationery, hobby and craft, office supplies and kits and combos under this brand. Our ‘DOMS’ brand tag line, ‘Every Ambition Needs Preparation’, is intended to create optimistic and progressive thoughts and encourage students, hobby enthusiasts and professionals to discover their talents and enhance their skills. Our label, ‘DOMS’ is registered with the Trade Marks Registry, Mumbai since 2005.
     </p>
 
     <h3 class="brand-title">C3</h3>
-    
     <img src="../../images/c3-logo.png" alt="C3 Logo" class="brand-logo" />
     <p>
       ‘C3’ brand was launched in the year 2012, to capture the affordable market segment. The key product in this category are polymer pencils, which when compared to wooden pencils are slightly cheaper. We introduced other products along with ‘C3’ polymer pencils, to develop the ‘C3’ brand. These products include colour pencils, sharpeners, erasers, kits and combos, chalks, and mathematical instruments box. Our label ‘C3’, is registered with the Trade Marks Registry, Mumbai since March 4, 2019.
@@ -172,20 +185,20 @@
     </p>
 
     <div class="intl-brands">
-      <a href="./das.html" target="_blank">  <img src="../../images/das-logo.jpg" alt="DAS" /></a>
-    
+      <a href="./das.html" target="_blank"><img src="../../images/das-logo.jpg" alt="DAS" /></a>
       <a href="./tratto.html" target="_blank"><img src="../../images/tratto-logo.jpg" alt="Tratto" /></a>
       <a href="./pongo.html" target="_blank"><img src="../../images/pongo-logo.jpg" alt="Pongo" /></a>
-     <a href="./maimeri.html" target="_blank"><img src="../../images/maimeri-logo.jpg" alt="Maimeri" /></a> 
-      <a href="./lyra.html" target="_blank"><img src="./lyra-logo.jpg" alt="Lyra" /></a>
-      <a href="./glotto.html" target="_blank"><img src="https://domsindia.com/wp-content/uploads/2019/08/giotto-600x359.jpg" alt="Giotto" /></a>
-      <a href="./daler.html" target="_blank"><img src="https://domsindia.com/wp-content/uploads/2019/08/daler-600x359.jpg" alt="Daler Rowney" /></a>
-      <a href="./canson.html" target="_blank"><img src="./canson-logo.jpg"></a>
+      <a href="./maimeri.html" target="_blank"><img src="../../images/maimeri-logo.jpg" alt="Maimeri" /></a>
+      <a href="./lyra.html" target="_blank"><img src="../../images/lyra-logo.jpg" alt="Lyra" /></a>
+      <a href="./giotto.html" target="_blank"><img src="https://domsindia.com/wp-content/uploads/2019/08/giotto-600x359.jpg" alt="Giotto" /></a>
+      <a href="./daler-rowney.html" target="_blank"><img src="https://domsindia.com/wp-content/uploads/2019/08/daler-600x359.jpg" alt="Daler Rowney" /></a>
+      <a href="./canson.html" target="_blank"><img src="../../images/canson-logo.jpg" alt="Canson" /></a>
     </div>
 
     <footer>
       <p>&copy; DOMS 2023. All Rights Reserved</p>
     </footer>
   </div>
+
 </body>
 </html>

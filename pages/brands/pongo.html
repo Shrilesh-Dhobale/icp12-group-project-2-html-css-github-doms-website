@@ -1,79 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pongo-DOMS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pongo - DOMS</title>
   <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f7f7f7;
+      background-color: #fff;
       color: #222;
-      padding: 10px;
-      line-height: 1.6;
-    }
-      .container {
+      padding: 5px;
       max-width: 1200px;
-      margin: 0 auto;
+      margin: auto;
+      line-height: 1.7;
+    }
+    .brand-logo {
+  display: block;
+  margin: 20px auto;
+  max-width: 250px; 
+  height: auto;
+}
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #c00000;
+      margin-bottom: 20px;
     }
 
-    .brand-logo {
-      display: block;
-      margin: 20px auto;
-      max-width: 300px;
-    }
-      p {
-      font-size: 16px;
-      margin-bottom: 20px;
+    p {
+      font-size: 18px;
       text-align: justify;
+      margin-bottom: 30px;
     }
-     img.product {
+
+    img {
+      display: block;
+      width: 100%;
       max-width: 800px;
       height: auto;
-      display: block;
-      margin: 20px auto;
-      border-radius: 8px;
+      margin: 0 auto;
+      border-radius: 10px;
     }
-      footer {
+
+    .das {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 40px;
       text-align: center;
-      margin-top: 5px;
+      font-size: 16px;
+      color: #0078A0;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
       font-size: 14px;
       color: black;
       border-top: 1px solid #ddd;
-      padding-top: 10px;
+      padding-top: 20px;
       font-style: italic;
       display: flex;
       justify-content: center;
     }
-      .back-link {
-      display: block;
-      margin-top: 5px;
-      text-align: center;
-    }
 
+/* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .brand-logo,
+      img.product {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .back-link {
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="../../images/pongo-logo.jpg" alt="Pongo Logo" class="brand-logo" />
+
     <p>
       <strong>Pongo</strong> Stories for modelling. PONGO is the first coloured modelling plasticine, both malleable and safe, popular among generations of teachers and children for 65 years. Used to give shape to the imagination, create new ways of learning and involve adults and children. PONGO is perfect for modelling at home and at school, with a range specially designed for its use.
     </p>
+
     <img src="../../images/hp-pongo.jpg" alt="Pongo product in use" class="product" />
+
     <footer class="footer">
       <p>&copy; DOMS 2025. All Rights Reserved</p>
     </footer>
-    <a href="index.html" class="back-link">← Back to Brands</a>
 
+    <a href="./brands.html" class="back-link">← Back to Brands</a>
   </div>
-  
 </body>
 </html>
+
+
