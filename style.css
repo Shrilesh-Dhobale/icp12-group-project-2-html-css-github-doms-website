@@ -123,4 +123,19 @@
       position:relative;
       right:-500px;
       top:-180px;
+      animation: rotategear 5s linear infinite;
+    }
+    @keyframes rotategear{
+      0%{
+        transform: rotate(0deg);
+      }
+      25%{
+        transform: rotate(60deg);
+      }
+      50%{
+        transform: rotate(0deg);
+      }
+      75%{
+        transform: rotate(-60deg);
+      }
     }
