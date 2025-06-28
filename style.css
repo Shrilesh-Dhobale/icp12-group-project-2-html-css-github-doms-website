@@ -53,3 +53,17 @@
     align-items: center;
     padding: 15px;
     }
+    .main-heading{
+      font-size: 150px;
+      
+    }
+    .main-quote{
+
+    }
+    .brush-icon{
+      height:80px;
+      position: relative;
+      top:800px;
+      left: 100px;
+    }
+    
