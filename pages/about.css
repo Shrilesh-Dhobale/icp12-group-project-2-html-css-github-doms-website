@@ -106,7 +106,81 @@ gap: 60px;
 .container{
     display: flex;
     justify-content:space-evenly ;
+    margin-bottom: 25px;
 }
 .icons{
     margin-top: 150px;
+}
+
+.footer {
+      background: antiquewhite;
+      padding: 40px 20px;
+      border-radius: 5px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .footer-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer-img img {
+      width: 180px;
+      transform: rotate(-5deg);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-main {
+      max-width: 800px;
+      flex: 1;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+
+    .footer-links div h4 {
+      margin-bottom: 10px;
+    }
+
+    .footer-links div p {
+      margin: 4px 0;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .footer-links div p:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      background: #f1f1f1;
+      padding: 8px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+.footer-bottom{
+  text-align: center;
 }
