@@ -45,10 +45,12 @@
     .main {
       display: flex;
       gap: 30px;
+  
     }
 
     .sidebar {
       width: 250px;
+      background-color: #f9f9f9;
     }
 
     .sidebar h4 {
@@ -93,7 +95,7 @@
 
     .card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 12px 24px rgb(0, 0, 0, 0.15);
     }
 
     .card img {
@@ -102,6 +104,7 @@
       border-radius: 10px;
       margin-bottom: 15px;
       cursor: pointer;
+      border: solid 1px rgb(252, 224, 187);
     }
 
     .card p {
