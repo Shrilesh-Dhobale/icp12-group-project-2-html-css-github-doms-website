@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      padding: 30px;
+    }
+
+    .header {
+      height: 150px;
+      background-image: url('../../images/header_img.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      padding-left: 40px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      cursor: pointer;
+
+    }
+
+    .card p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #444;
+      background-color: antiquewhite;
+      border-radius: 15px;
+      padding: 10px;
+    }
+
+    .footer p {
+      text-align: center;
+      margin-top: 5%;
+    }
+
+    .shorts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      justify-items: center;
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+      margin: 40px auto;
+      max-width: 1200px;
+    }
+
+    .shorts iframe {
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+      max-width: 376px;
+      height: 669px;
+    }
+
+    .shorts iframe:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    }
+
+
+    @media (max-width: 900px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Products</h1>
+  </header>
+
+  <div class="product-grid">
+
+    <div class="card">
+      <a href="pencil.html">
+        <img src="../../images/pencil.jpg" alt="Pencil"></a>
+      <p>Pencils & Accessories</p>
+    </div>
+
+    <div class="card">
+      <a href="drawing.html">
+        <img src="../../images/drawingandcolouring.jpg" alt="Drawing & Colouring"></a>
+      <p>Drawing & Colouring</p>
+    </div>
+
+    <div class="card">
+      <a href="craft.html">
+        <img src="../../images/craft.jpg" alt="Crafts"></a>
+      <p>Crafts & Hobbyist</p>
+    </div>
+
+    <div class="card">
+      <a href="fineart.html">
+        <img src="../../images/paintbrush.jpg" alt="Paintbrush"></a>
+      <p>Fine Art</p>
+    </div>
+
+    <div class="card">
+      <a href="marker.html">
+        <img src="../../images/marker.jpg" alt="Marker"></a>
+      <p>Markers & Highlighters</p>
+    </div>
+
+    <div class="card">
+      <a href="maths.html">
+        <img src="../../images/maths instrument.jpg" alt="Math Instruments"></a>
+      <p>Mathematical Drawing Instruments</p>
+    </div>
+
+    <div class="card">
+      <a href="paper.html">
+        <img src="../../images/paper stationary.jpg" alt="Paper Stationery"></a>
+      <p>Paper Stationery</p>
+    </div>
+
+    <div class="card">
+      <a href="pens.html">
+        <img src="../../images/pens.jpg" alt="Pens"></a>
+      <p>Pens & Writing Instruments</p>
+    </div>
+
+    <div class="card">
+      <a href="gift.html">
+        <img src="../../images/gift.jpg" alt="Gift"></a>
+      <p>Gifting</p>
+    </div>
+
+  </div>
+  <h2 style="text-align: center; margin-top: 40px;">Watch Our Highlights</h2>
+  <div class="shorts">
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/jlPKPaY4QEg"
+      title="Brighten up your notes with DOMS Highlighters – vibrant colours for every highlight!" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/rqhVZpnReVo"
+      title="DOMS Futuristic Home Series Notebook – Write the Future" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/JwppEPvYY_s"
+      title="DOMS | Sharpener Manufacturing Process | Always On Point" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/RRtIJyGXXdg"
+      title="Race Your Imagination with the DOMS Streetcar Series Notebooks" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/s156SKCQWGo"
+      title="Introducing the all-new DOMS Speedz Kit!" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="376" height="669" src="https://www.youtube.com/embed/ni9mDwZbJXk"
+      title="DOMS at Paperworld Middle East 2024 | Discover Our Latest Innovations at Dubai World Trade Centre"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <footer class="footer">
+    <p>© DOMS 2023. All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>

@@ -53,6 +53,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    
     }
     .main-container{
       position: relative;
@@ -173,11 +174,3 @@
       }
     }
     
-    .flex2 {
-                position: relative;
-                display: flex;
-                justify-content: space-around;
-                background-color: green;
-                height:100px;
-                width: 100px;
-    }
