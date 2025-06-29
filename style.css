@@ -55,8 +55,8 @@
     padding: 15px;
     }
     .main-container{
-      position: absolute;
-      top:-10px;
+      position: relative;
+      top:200px;
     }
     .main-heading{
       font-size: 250px;
@@ -116,7 +116,7 @@
     .diary-icon{
       height: 80px;
       position: absolute;
-      top:120px;
+      top:500px;
       left:-50px;
       rotate: -20deg;
       animation: movediary 1.5s ease-in-out infinite;
@@ -160,4 +160,24 @@
     }
     .note{
       background-color: goldenrod;
+      position: relative;
+      top:-50px;
+      animation: animateNote 15s linear infinite;
+    }
+    @keyframes {
+      0%{
+        transform:translatex(0%);
+        }
+      100%{
+        transform:translatex(-100%);
+      }
+    }
+    
+    .flex2 {
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                background-color: green;
+                height:100px;
+                width: 100px;
     }
