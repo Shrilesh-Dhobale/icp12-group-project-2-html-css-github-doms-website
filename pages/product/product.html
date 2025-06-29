@@ -79,11 +79,6 @@
       padding: 10px;
     }
 
-    .footer p {
-      text-align: center;
-      margin-top: 5%;
-    }
-
     .navbar {
       text-align: center;
       background-color: antiquewhite;
@@ -140,7 +135,78 @@
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
     }
 
+    .footer {
+      background: antiquewhite;
+      padding: 40px 20px;
+      border-radius: 5px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    }
 
+    .footer-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer-img img {
+      width: 180px;
+      transform: rotate(-5deg);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-main {
+      max-width: 800px;
+      flex: 1;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+
+    .footer-links div h4 {
+      margin-bottom: 10px;
+    }
+
+    .footer-links div p {
+      margin: 4px 0;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .footer-links div p:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      background: #f1f1f1;
+      padding: 8px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+.footer-bottom{
+  text-align: center;
+}
     @media (max-width: 900px) {
       .product-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -259,8 +325,44 @@
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
   <footer class="footer">
-    <p>© DOMS 2023. All Rights Reserved</p>
+    <div class="footer-container">
+
+      <div class="footer-links">
+        <div>
+          <h4>ABOUT US</h4>
+          <p>Our Company</p>
+          <p>Media Center</p>
+          <p>History</p>
+          <p>Careers</p>
+          <p>Leadership</p>
+        </div>
+        <div>
+          <h4>Need Help?</h4>
+          <p>FAQ</p>
+          <p>Site map</p>
+          <p>Contact Us</p>
+        </div>
+        <div>
+          <h4>Terms of Use</h4>
+          <p>Privacy Policy</p>
+          <p>Financial & Policies</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="social-icons">
+      <img src="./../../images/youtube.png" alt="YouTube">
+      <img src="./../../images/facebook (1).png" alt="Facebook">
+      <img src="./../../images/instagram.png" alt="Instagram">
+      <img src="./../../images/twitter.png" alt="Twitter">
+      <img src="./../../images/whatsapp.png" alt="WhatsApp">
+    </div>
+
+    <div class="footer-bottom">
+      <p>© DOMS 2023. All Rights Reserved</p>
+    </div>
   </footer>
+
 </body>
 
 </html>
