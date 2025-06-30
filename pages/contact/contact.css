@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,91 +7,103 @@
 }
 
 body {
-  background-color: #cbe7e7;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
+/* Headings */
 .main-heading {
   text-align: center;
-  font-size: 32px;
-  margin-top: 30px;
-  color: #0b3d0b;
+  font-size: 36px;
+  margin-top: 40px;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
-  animation: fadeIn 1.5s ease-in-out;
+  animation: fadeInDown 1.2s ease-out;
 }
 
 .sub-heading {
   text-align: center;
-  font-size: 16px;
-  color: #2c2c2c;
+  font-size: 18px;
+  color: #555;
   margin-bottom: 30px;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeInUp 1.5s ease-out;
 }
 
+/* Layout */
 .contact-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  padding: 20px;
+  gap: 40px;
+  padding: 20px 40px;
 }
 
+/* Contact Box */
 .box {
   flex: 1 1 400px;
   max-width: 500px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  padding: 25px 30px;
-  animation: slideUp 1.2s ease;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  animation: slideUp 1s ease-in-out;
 }
 
 .box h2 {
   text-align: center;
-  color: green;
-  margin-bottom: 15px;
+  color: #0078A0;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
+/* Form Styles */
 label {
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 10px;
   display: block;
 }
 
 input, textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #555;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.9);
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
 }
 
 button {
   width: 100%;
-  padding: 12px;
-  background: rgb(38, 108, 8);
+  padding: 14px;
+  background: #0078A0;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background: darkgreen;
+  background: #004d5f;
   transform: scale(1.03);
 }
 
+/* Map Box */
 .map-box {
   flex: 1 1 400px;
   max-width: 500px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   animation: fadeInMap 1.5s ease-in-out;
 }
@@ -100,12 +114,15 @@ iframe {
   border: 0;
 }
 
+/* Address Section */
 .address {
   text-align: center;
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #2c2c2c;
 }
 
+/* Back Arrow */
 .back-arrow {
   text-align: center;
   margin-top: 20px;
@@ -114,12 +131,19 @@ iframe {
 .back-arrow img {
   height: 30px;
   width: 30px;
+  transition: transform 0.2s ease;
 }
 
+.back-arrow img:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
 
   .box, .map-box {
@@ -127,17 +151,23 @@ iframe {
   }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(50px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInMap {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
