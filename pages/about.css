@@ -144,14 +144,26 @@ iframe {
   color: white;
 }
 
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
 .social-icons img {
   width: 32px;
-  margin: 10px;
-  transition: transform 0.3s ease;
+  height: 32px;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .social-icons img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* Animations */
