@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us</title>
   <style>
     * {
@@ -10,95 +12,183 @@
     }
 
     body {
-    
-      background-color: rgb(203, 231, 231);
+      background-color: #cbe7e7;
       font-family: Arial, sans-serif;
+    }
+
+    .main-heading {
+      text-align: center;
+      font-size: 32px;
+      margin-top: 30px;
+      color: #0b3d0b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .sub-heading {
+      text-align: center;
+      font-size: 16px;
+      color: #2c2c2c;
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .box {
+      flex: 1 1 400px;
+      max-width: 500px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 25px 30px;
+      animation: slideUp 1.2s ease;
     }
 
     .box h2 {
       text-align: center;
-      margin-bottom: 20px;
       color: green;
+      margin-bottom: 15px;
     }
 
     label {
       font-weight: bold;
+      margin-top: 10px;
       display: block;
-      margin: 10px 0 5px;
     }
-
-    .box {
-    width: 400px;
-    min-height: 300px;
-    background: #FFF;
-    border-radius: 15px;
-    box-shadow: 0 0 30px rgba(45, 44, 44, 0.3);
-    padding:10px 20px;
-    margin-left: 400px;
-    margin-bottom: 150px;
-    margin-top: 180px;
-    box-sizing:border-box;
-    box-shadow:10px 10px 10px 10px;
-    background:transparent;
-}
 
     input, textarea {
       width: 100%;
       padding: 10px;
-       margin-bottom: 15px;
+      margin-bottom: 15px;
       border: 1px solid #555;
       border-radius: 4px;
       background: rgba(255, 255, 255, 0.9);
-      font-size: 14px;
     }
-      button {
+
+    button {
       width: 100%;
       padding: 12px;
-      border: none;
       background: rgb(38, 108, 8);
       color: white;
-      font-size: 16px;
+      border: none;
       border-radius: 5px;
-      box-shadow:5px 5px 10px 3px #b3b3b3  ;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       cursor: pointer;
+      transition: all 0.3s ease;
     }
 
     button:hover {
       background: darkgreen;
-      transition:0.5;
-      border-radius:8px;
-      box-shadow:5px 5px 10px #3b3a3a;
+      transform: scale(1.03);
     }
 
-    @media (max-width: 600px) {
-      .box {
-        margin: 30px 10px;
+    .map-box {
+      flex: 1 1 400px;
+      max-width: 500px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      animation: fadeInMap 1.5s ease-in-out;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+    }
+
+    .address {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    .back-arrow {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-arrow img {
+      height: 30px;
+      width: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
       }
+
+      .box, .map-box {
+        width: 90%;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInMap {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
     }
   </style>
 </head>
 <body>
 
-  <div class="box">
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Enter your name" required>
+  <h1 class="main-heading">Get in Touch</h1>
+  <p class="sub-heading">Fill the form or find us on the map!</p>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Enter your email" required>
+  <div class="contact-container">
 
-      <label for="message">Message:</label>
-      <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+    <!-- Contact Form -->
+    <div class="box">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
 
-      <button type="submit">Submit</button>
-    </form>
-    <a href="index.html"><img src="./images/back arrow.png" height="30px" width="30px" style="margin-left:45%; margin-top:30px;"></a>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="back-arrow">
+        <a href="index.html"><img src="./images/back arrow.png" alt="Back"></a>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.7903976414354!2d73.83861487557053!3d19.975315181423486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeaaa4bbe4d59%3A0x9b4cb7f45be96f3!2sJail%20Rd%2C%20Nashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1729437513325!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="address">
+        <h3><u>Address</u></h3>
+        <b>At Jail Road, Nashik Road 422102, Nashik, Maharashtra</b>
+      </div>
+    </div>
+
   </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.7903976414354!2d73.83861487557053!3d19.975315181423486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeaaa4bbe4d59%3A0x9b4cb7f45be96f3!2sJail%20Rd%2C%20Nashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1729437513325!5m2!1sen!2sin"
-                width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   <h3><u>Address</u></h3>
-        <b>At Jail Road Nashik Road 422102, Nashik Maharashtra</b>
+
 </body>
 </html>
-
