@@ -15,6 +15,7 @@ body {
 
 /* Main container */
 .brands-page {
+  width: 90%;
   max-width: 1200px;
   margin: 40px auto;
   padding: 30px;
@@ -23,11 +24,13 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   animation: fadeSlideUp 1s ease-out;
 }
+
 /* DAS Page Styling */
 .das-page {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 30px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px 40px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -64,6 +67,29 @@ body {
   padding-top: 20px;
 }
 
+/* Common layout for individual brand pages */
+.das-page,
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeSlideUp 1s ease-out;
+  text-align: center;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .das-page,
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
 .back-link {
   display: inline-block;
   margin-top: 20px;
@@ -76,7 +102,6 @@ body {
 .back-link:hover {
   color: #004d5f;
 }
-
 
 /* Animations */
 @keyframes fadeSlideUp {
@@ -192,8 +217,9 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .brands-page {
+    width: 95%;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
   }
 
   .brand-logo {
