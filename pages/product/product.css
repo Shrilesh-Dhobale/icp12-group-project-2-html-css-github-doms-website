@@ -8,7 +8,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f5f7fa;
-  padding: 30px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -71,7 +71,7 @@ body {
   align-items: center;
   justify-content: left;
   padding-left: 40px;
-  border-radius: 15px;
+ 
   margin-bottom: 40px;
 }
 
@@ -128,29 +128,6 @@ body {
 .card p:hover {
   background-color: #ffefd5;
 }
-
-
-.navbar h4 {
-  display: inline-block;
-  margin: 0 20px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s, border-bottom 0.3s;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-  padding-right: 55px;
-}
-
-.navbar a:hover {
-  color: #ff6600;
-  border-bottom: 2px solid #ff6600;
-}
-
 .shorts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -179,51 +156,12 @@ body {
 }
 
 .footer {
-  background: antiquewhite;
+  background: #0a2a43;
   padding: 40px 20px;
   border-radius: 5px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
-}
-
-.footer-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.footer-img img {
-  width: 180px;
-  transform: rotate(-5deg);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.footer-main {
-  max-width: 800px;
-  flex: 1;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.footer-links div h4 {
-  margin-bottom: 10px;
-}
-
-.footer-links div p {
-  margin: 4px 0;
-  color: #333;
-  cursor: pointer;
-}
-
-.footer-links div p:hover {
-  text-decoration: underline;
+  color: white;
+  
 }
 
 .social-icons {
@@ -250,6 +188,27 @@ body {
 
 .footer-bottom {
   text-align: center;
+  color: white;
+}
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInMap {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
 @media (max-width: 900px) {
