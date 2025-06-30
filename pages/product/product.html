@@ -84,6 +84,35 @@
       margin-top: 5%;
     }
 
+    .navbar {
+      text-align: center;
+      background-color: antiquewhite;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+    }
+
+    .navbar h4 {
+      display: inline-block;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      padding-right: 55px;
+    }
+
+    .navbar a:hover {
+      color: #ff6600;
+      border-bottom: 2px solid #ff6600;
+    }
+
     .shorts {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -127,7 +156,13 @@
 </head>
 
 <body>
-
+  <div class="navbar">
+    <a href="../../index.html">Home</a>
+    <a href="../about.html">About Us</a>
+    <a href="./product.html">Products</a>
+    <a href="../brands/brands.html">Brands</a>
+    <a href="../contact.html">Contact Us</a>
+  </div>
   <header class="header">
     <h1>Products</h1>
   </header>

@@ -8,7 +8,7 @@ index.html
 
 ### 🖼️ Preview:
 
-![Home Page](./screenshots/home-page.png)
+<img src="screenshorts/home-page.png" alt="Home Page" width="500px"/>
 
 
 > (Save this screenshot as home-page.png inside a screenshots/ folder.)
@@ -35,7 +35,7 @@ pages/product/product.html
 
 ### 🖼️ Preview:
 
-![Products Page Screenshot](screenshots/products-page.png)
+<img src="screenshorts/product-page.png" alt="Product Page" width="500px"/>
 
 > (Make sure to save the screenshot as products-page.png inside a screenshots/ folder in your project.)
 
@@ -57,7 +57,7 @@ pages/about.html
 
 ### 🖼️ Preview:
 
-![About Us Page Screenshot](screenshots/about-page.png)
+<img src="screenshorts/about-page.png" alt="About Page" width="500px"/>
 
 > (Save the screenshot as about-page.png in the screenshots/ folder.)
 
@@ -69,11 +69,6 @@ pages/about.html
   - *Late Shri Mansukhlal Rajani*
 - Section: *Infrastructure of DOMS*
 
-
-
-![About Us Page Screenshot](about-page.png/screenshort)
-
-> (Save the screenshot as about-page.png in the screenshots/ folder.)
 
 ### 🙏 Highlights:
 - Inspirational message:  
@@ -91,8 +86,7 @@ pages/brands/brands.html
 
 ## 🏷️ Brands Page
 
-![Brands Page Screenshot](screenshots/brands-page.png)
-
+<img src="screenshorts/brands-page.png" alt="Brands Page" width="500px"/>
 > (Save the screenshot as brands-page.png inside the screenshots/ folder.)
 
 ### 📌 Highlights:
@@ -114,7 +108,7 @@ pages/contact.html
 
 ### 🖼️ Preview:
 
-![Contact Us Page Screenshot](screenshots/contact-page.png)
+<img src="screenshorts/contact-page.png" alt="Contact Page" width="500px"/>
 
 > (Save this screenshot as contact-page.png inside a screenshots/ folder.)
 
@@ -126,8 +120,14 @@ pages/contact.html
 ### 🔘 Submit Button:
 - Green “Submit” button to send the message (non-functional/static in HTML/CSS only version).
 
+## 👩‍💻 Team Members
 
+We are a group of passionate developers collaborating on innovative web and software projects. Each of us brings unique skills in HTML, CSS, Java, and Python. Explore our GitHub profiles and repositories to see our work!
 
-
-
-[def]: creenshort/homeome-page.pn
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/207746713?v=4" width="100" height="100" style="border-radius: 50%;" />
+  <img src="https://avatars.githubusercontent.com/u/199504084?v=4" width="100" height="100" style="border-radius: 50%;" />
+  <img src="https://avatars.githubusercontent.com/u/106259491?v=4" width="100" height="100" style="border-radius: 50%;" />
+  <img src="https://avatars.githubusercontent.com/u/106259611?v=4" width="100" height="100" style="border-radius: 50%;" />
+  <img src="https://avatars.githubusercontent.com/u/108413050?v=4" width="100" height="100" style="border-radius: 50%;" />
+</p>
