@@ -1,15 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DOMS Brands</title>
    <link rel="stylesheet" href="brands.css">
-  
-  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f7f7f7 0%, #e9f2f7 100%);
+      font-family: 'Inter', sans-serif;
+      color: #222;
+      padding: 10px;
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .navbar {
+      text-align: center;
+      background-color: antiquewhite;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+    }
+
+    .navbar h4 {
+      display: inline-block;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      padding-right: 55px;
+    }
+
+    .navbar a:hover {
+      color: #ff6600;
+      border-bottom: 2px solid #ff6600;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+      font-weight: 600;
+      margin-top: 15px;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    .brand-title {
+      color: #0078A0;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .sub-title {
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .brand-logo {
+      display: block;
+      margin: 15px auto;
+      max-width: 250px;
+    }
+
+    .brands-page p {
+      max-width: 850px;
+      margin: 0 auto 20px;
+      text-align: justify;
+    }
+
+    .sub-brands {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .sub-brand {
+      flex: 1 1 400px;
+      max-width: 500px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .sub-brand:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 120, 160, 0.2);
+    }
+
+    .sub-brand img {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto 15px;
+    }
+
+    .intl-brands {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .intl-brands img {
+      max-width: 200px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .intl-brands img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.1);
+    }
+
+    .footer {
+      background: antiquewhite;
+      padding: 40px 20px;
+      border-radius: 5px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .footer-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer-img img {
+      width: 180px;
+      transform: rotate(-5deg);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-main {
+      max-width: 800px;
+      flex: 1;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+
+    .footer-links div h4 {
+      margin-bottom: 10px;
+    }
+
+    .footer-links div p {
+      margin: 4px 0;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .footer-links div p:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      background: #f1f1f1;
+      padding: 8px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer-bottom {
+      text-align: center;
+    }
+
+    @media (max-width: 992px) {
+      body {
+        padding: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sub-brand {
+        flex: 1 1 100%;
+      }
+
+      .intl-brands img {
+        max-width: 100px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-size: 22px;
+      }
+
+      .brands-page p {
+        font-size: 15px;
+      }
+
+      .sub-brand {
+        padding: 15px;
+      }
+    }
+  </style>
+
 </head>
+
 <body>
- 
+  <div class="navbar">
+    <a href="../../index.html">Home</a>
+    <a href="../about.html">About Us</a>
+    <a href="../product/product.html">Products</a>
+    <a href="../brands/brands.html">Brands</a>
+    <a href="../contact.html">Contact Us</a>
+  </div>
+
   <div class="brands-page">
     <h1>Brands</h1>
     <h2>Domestic Brands</h2>
@@ -17,13 +260,22 @@
     <h3 class="brand-title">DOMS</h3>
     <img src="../../images/doms-logo.png" alt="DOMS Logo" class="brand-logo" />
     <p>
-      ‘DOMS’ is our flagship brand. The products under the ‘DOMS’ brand are known for its premium quality and product designing. We sell all products in the scholastic stationery, scholastic art material, paper stationery, hobby and craft, office supplies and kits and combos under this brand. Our ‘DOMS’ brand tag line, ‘Every Ambition Needs Preparation’, is intended to create optimistic and progressive thoughts and encourage students, hobby enthusiasts and professionals to discover their talents and enhance their skills. Our label, ‘DOMS’ is registered with the Trade Marks Registry, Mumbai since 2005.
+      ‘DOMS’ is our flagship brand. The products under the ‘DOMS’ brand are known for its premium quality and product
+      designing. We sell all products in the scholastic stationery, scholastic art material, paper stationery, hobby and
+      craft, office supplies and kits and combos under this brand. Our ‘DOMS’ brand tag line, ‘Every Ambition Needs
+      Preparation’, is intended to create optimistic and progressive thoughts and encourage students, hobby enthusiasts
+      and professionals to discover their talents and enhance their skills. Our label, ‘DOMS’ is registered with the
+      Trade Marks Registry, Mumbai since 2005.
     </p>
 
     <h3 class="brand-title">C3</h3>
     <img src="../../images/c3-logo.png" alt="C3 Logo" class="brand-logo" />
     <p>
-      ‘C3’ brand was launched in the year 2012, to capture the affordable market segment. The key product in this category are polymer pencils, which when compared to wooden pencils are slightly cheaper. We introduced other products along with ‘C3’ polymer pencils, to develop the ‘C3’ brand. These products include colour pencils, sharpeners, erasers, kits and combos, chalks, and mathematical instruments box. Our label ‘C3’, is registered with the Trade Marks Registry, Mumbai since March 4, 2019.
+      ‘C3’ brand was launched in the year 2012, to capture the affordable market segment. The key product in this
+      category are polymer pencils, which when compared to wooden pencils are slightly cheaper. We introduced other
+      products along with ‘C3’ polymer pencils, to develop the ‘C3’ brand. These products include colour pencils,
+      sharpeners, erasers, kits and combos, chalks, and mathematical instruments box. Our label ‘C3’, is registered with
+      the Trade Marks Registry, Mumbai since March 4, 2019.
     </p>
 
     <h2>Key Sub Brands under the flagship Brand "DOMS"</h2>
@@ -31,23 +283,30 @@
       <div class="sub-brand">
         <img src="../../images/amariz-logo.png" alt="Amariz Logo" />
         <p>
-          ‘Amariz’ was launched in the year 2022, as a sub-brand under our flagship brand ‘DOMS’. We have introduced and continue to introduce fine art products under ‘Amariz’ with a specific focus towards artists professionals as an end user. We have recently launched art brushes and kneadable erasers under this sub-brand.
+          ‘Amariz’ was launched in the year 2022, as a sub-brand under our flagship brand ‘DOMS’. We have introduced and
+          continue to introduce fine art products under ‘Amariz’ with a specific focus towards artists professionals as
+          an end user. We have recently launched art brushes and kneadable erasers under this sub-brand.
         </p>
       </div>
       <div class="sub-brand">
         <img src="../../images/FixyFix-Logo.png" alt="FixyFix Logo" />
         <p>
-          ‘FixyFix’ was launched in the year 2023, as a sub-brand under the flagship brand ‘DOMS’. We offer an exclusive range of glues and adhesives under this sub-brand. We have recently launched glue sticks, glitter glues, fragrance glues and white glues under ‘FixyFix’.
+          ‘FixyFix’ was launched in the year 2023, as a sub-brand under the flagship brand ‘DOMS’. We offer an exclusive
+          range of glues and adhesives under this sub-brand. We have recently launched glue sticks, glitter glues,
+          fragrance glues and white glues under ‘FixyFix’.
         </p>
       </div>
     </div>
 
     <h2>International Brands</h2>
     <p>
-      Besides boasting a huge presence in domestic circuit, DOMS through its strategic partnerships with F.I.L.A. is associated with many iconic brands of F.I.L.A. that are the most prestigious marks for use in school, art and creative expression.
+      Besides boasting a huge presence in domestic circuit, DOMS through its strategic partnerships with F.I.L.A. is
+      associated with many iconic brands of F.I.L.A. that are the most prestigious marks for use in school, art and
+      creative expression.
     </p>
 
     <div class="intl-brands">
+
       <a href="./das.html"><img src="../../images/das-logo.jpg" alt="DAS" /></a>
       <a href="./tratto.html"><img src="../../images/tratto-logo.jpg" alt="Tratto" /></a>
       <a href="./pongo.html"><img src="../../images/pongo-logo.jpg" alt="Pongo" /></a>
@@ -56,12 +315,56 @@
       <a href="./giotto.html"><img src="https://domsindia.com/wp-content/uploads/2019/08/giotto-600x359.jpg" alt="Giotto" /></a>
       <a href="./daler-rowney.html"><img src="https://domsindia.com/wp-content/uploads/2019/08/daler-600x359.jpg" alt="Daler Rowney" /></a>
       <a href="./canson.html"><img src="../../images/canson-logo.jpg" alt="Canson" /></a>
+      <a href="./das.html" target="_blank"><img src="../../images/das-logo.jpg" alt="DAS" /></a>
+      <a href="./tratto.html" target="_blank"><img src="../../images/tratto-logo.jpg" alt="Tratto" /></a>
+      <a href="./pongo.html" target="_blank"><img src="../../images/pongo-logo.jpg" alt="Pongo" /></a>
+      <a href="./maimeri.html" target="_blank"><img src="../../images/maimeri-logo.jpg" alt="Maimeri" /></a>
+      <a href="./lyra.html" target="_blank"><img src="../../images/lyra-logo.jpg" alt="Lyra" /></a>
+      <a href="./giotto.html" target="_blank"><img
+          src="https://domsindia.com/wp-content/uploads/2019/08/giotto-600x359.jpg" alt="Giotto" /></a>
+      <a href="./daler-rowney.html" target="_blank"><img
+          src="https://domsindia.com/wp-content/uploads/2019/08/daler-600x359.jpg" alt="Daler Rowney" /></a>
+      <a href="./canson.html" target="_blank"><img src="../../images/canson-logo.jpg" alt="Canson" /></a>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-links">
+        <div>
+          <h4>ABOUT US</h4>
+          <p>Our Company</p>
+          <p>Media Center</p>
+          <p>History</p>
+          <p>Careers</p>
+          <p>Leadership</p>
+        </div>
+        <div>
+          <h4>Need Help?</h4>
+          <p>FAQ</p>
+          <p>Site map</p>
+          <p>Contact Us</p>
+        </div>
+        <div>
+          <h4>Terms of Use</h4>
+          <p>Privacy Policy</p>
+          <p>Financial & Policies</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="social-icons">
+      <img src="./../../images/youtube.png" alt="YouTube">
+      <img src="./../../images/facebook (1).png" alt="Facebook">
+      <img src="./../../images/instagram.png" alt="Instagram">
+      <img src="./../../images/twitter.png" alt="Twitter">
+      <img src="./../../images/whatsapp.png" alt="WhatsApp">
     </div>
 
-    <footer>
-      <p>&copy; DOMS 2023. All Rights Reserved</p>
-    </footer>
-  </div>
-
+    <div class="footer-bottom">
+      <p>© DOMS 2023. All Rights Reserved</p>
+    </div>
+  </footer>
 </body>
+
 </html>
