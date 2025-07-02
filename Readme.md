@@ -125,9 +125,9 @@ pages/contact.html
 We are a group of passionate developers collaborating on innovative web and software projects. Each of us brings unique skills in HTML, CSS, Java, and Python. Explore our GitHub profiles and repositories to see our work!
 
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/207746713?v=4" width="100" height="100" style="border-radius: 50%;" />
-  <img src="https://avatars.githubusercontent.com/u/199504084?v=4" width="100" height="100" style="border-radius: 50%;" />
-  <img src="https://avatars.githubusercontent.com/u/106259491?v=4" width="100" height="100" style="border-radius: 50%;" />
-  <img src="https://avatars.githubusercontent.com/u/106259611?v=4" width="100" height="100" style="border-radius: 50%;" />
-  <img src="https://avatars.githubusercontent.com/u/108413050?v=4" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/manas.jpeg" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/vaishnavi.jpeg" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/maithily.jpg" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/shreya.jpg" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/shrilesh.jpg" width="100" height="100" style="border-radius: 50%;" />
 </p>
