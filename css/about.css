@@ -69,7 +69,8 @@ body {
   margin: 20px 150px;
   font-size: 18px;
   text-align: justify;
-  animation: slideUp 1.5s ease-out;
+  animation: slideUp 1.5s ease-out; 
+
 }
 
 .heading-1,
@@ -93,7 +94,8 @@ body {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 10px; 
+  margin-bottom: 50px;
 }
 .product-list{
   padding: 5px 7px ;
@@ -111,27 +113,8 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
-.p2 {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 30px;
-}
 
-.image-2-3 {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  animation: fadeInImages 2s ease;
-}
 
-.image-2 img {
-  height: 200px;
-}
-
-.image-2 p {
-  text-align: center;
-  margin-top: 10px;
-}
 
 .image-4 img {
   width: 100%;
@@ -151,6 +134,47 @@ iframe {
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
+
+.team-heading{
+  padding: 2px 5px ;
+ background-color: rgb(238, 255, 5);
+  margin-left: 10px;
+  border-bottom: 5px solid rgb(225, 9, 9);
+  border-radius: 5px ;
+}
+
+.member-continer{
+  display: flex;
+  gap:80px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px 30px ;
+  margin-bottom: 20px;
+}
+
+
+.member-card{
+  border: 1px solid black;
+  height: 250px;
+  width: 300px;
+   position: relative;
+   margin-top: 70px;
+   border-radius: 20px;
+}
+
+
+ 
+.member-image{
+  border-radius: 100px ;
+  position: absolute;
+  bottom: 160px;
+  right: 78px;
+  box-shadow: 0 0 4px 3px rgb(92, 91, 91);
+  
+  
+}
+
+
 
 .footer {
   background: #0a2a43;
