@@ -141,20 +141,20 @@
     .brush-icon{
       position: absolute;
       height: 80px;
-      top:70%;
+      bottom: 100px;
       left:20%;
        animation: moveBrush 1.5s ease-in-out infinite;
     
     }
      @keyframes moveBrush{
       0%{
-        top:70%;
+        bottom:100px;
       }
       50%{
-        top:75%;
+        bottom:80px;
       }
       100%{
-        top:70%;
+        bottom:100px;
       }
     }
     .gear-text{
@@ -210,6 +210,51 @@
         height: 65px;
         left:10%;
         top:30%;
+      }
+    }
+    @media  screen and (min-width: 600px) and (max-width: 768px) {
+      .logo{
+        font-size: 15px;
+      }
+      .logo-smile{
+        height:10px;
+      }
+      .navbar{
+        font-size: 12px;
+        width:50%;
+      }
+      .diary-icon{
+        height:50px;
+        left:100px;
+      }
+      .main-heading{
+        font-size: 130px;
+        left:15%;
+      }
+      .gear-icon{
+        right:80px;
+        height: 150px;
+        bottom:200px;
+      }
+      .gear-text{
+        right:133px;
+        font-size: 15px;
+        bottom:260px;
+        font-size: 12px;
+      }
+      .main-quote{
+        left:25%;
+        top:47%;
+        font-size: 15px;
+      }
+      .pencil-icon{
+        height:100px;
+        top:230px;
+      }
+      .brush-icon{
+        height: 65px;
+        left:10%;
+        bottom:200px;
       }
     }
     .note{
@@ -488,7 +533,10 @@
       padding-top: 5px;
       padding-bottom: 5px;
       background-color:orchid;
-      
+      border:none;
+      border-radius: 2px;
+      font-family: fantasy;
+      cursor: pointer;
     }
     .footer-content-line{
       width:90%;
@@ -533,6 +581,7 @@
     display: flex;
     gap:20px;
     text-shadow: 2px 2px 5px gray;
+    cursor: pointer;
     }
     .ig:hover{
       content: url(./images/instagram\ \(1\).png);
@@ -574,5 +623,11 @@
       }
       .content-col-3{
         padding-left: 500px;
+      }
+      .footer-btn{
+        margin-left: 70%;
+      }
+      .last-footer{
+        left: 42%;
       }
     }
