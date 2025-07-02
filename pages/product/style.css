@@ -1,62 +1,81 @@
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f5f7fa;
-  padding: 30px;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #0a2a43; /* Dark background */
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for contrast */
+  background-color: #0a2a43;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 
 .nav-container {
   max-width: 1200px;
   margin: auto;
-  padding: 15px 30px;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Logo */
 .logo {
-  font-size: 26px;
-  font-weight: 700;
-  color: #ffffff; /* Light text for contrast */
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
   text-decoration: none;
-  letter-spacing: 1px;
 }
 
+/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 
 .nav-links li a {
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  color: #ffffff; /* White links */
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
-  color: #ffc107; /* Golden-yellow hover color */
-  border-bottom: 2px solid #ffc107;
-  padding-bottom: 2px;
+  color: #ffc107;
 }
 
 
+
+/* Header */
 .header {
   height: 150px;
   background-image: url('../../images/header_img.png');
@@ -65,9 +84,8 @@ body {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
   padding-left: 40px;
-  border-radius: 15px;
   margin-bottom: 40px;
 }
 
@@ -77,6 +95,7 @@ body {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
+/* Dropdown */
 .dropdown {
   text-align: center;
   margin-bottom: 30px;
@@ -89,15 +108,18 @@ body {
   border: 1px solid #ccc;
 }
 
+/* Layout */
 .main {
   display: flex;
   gap: 30px;
-
 }
 
+/* Sidebar */
 .sidebar {
   width: 250px;
   background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .sidebar h4 {
@@ -119,10 +141,12 @@ body {
   cursor: pointer;
 }
 
+/* Main content */
 .container {
   flex: 1;
 }
 
+/* Product Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -138,11 +162,12 @@ body {
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgb(0, 0, 0, 0.15);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -151,7 +176,7 @@ body {
   border-radius: 10px;
   margin-bottom: 15px;
   cursor: pointer;
-  border: solid 1px rgb(252, 224, 187);
+  border: 1px solid rgb(252, 224, 187);
 }
 
 .card p {
@@ -179,12 +204,41 @@ body {
   background-color: rgb(248, 227, 200);
 }
 
-.footer p {
-  text-align: center;
-  margin-top: 5%;
-  color: #555;
+.footer {
+  background: #0a2a43;
+  padding: 40px 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  color: white;
+  
 }
 
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  color: white;
+}
+/* Responsive Design */
 @media (max-width: 900px) {
   .main {
     flex-direction: column;
@@ -203,5 +257,20 @@ body {
 @media (max-width: 600px) {
   .product-grid {
     grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .header h1 {
+    font-size: 28px;
   }
 }

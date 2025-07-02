@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
-  color: #222;
-  line-height: 1.7;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
 }
 
 /* Main container */
@@ -26,8 +30,8 @@ body {
 }
 /* --- NAVIGATION BAR --- */
 .navbar {
-  background-color: #0a2a43; /* Dark background */
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for contrast */
+  background-color: #0a2a43; 
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); 
   position: sticky;
   top: 0;
   z-index: 1000;
