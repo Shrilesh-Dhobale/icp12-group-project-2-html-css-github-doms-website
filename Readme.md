@@ -31,7 +31,7 @@ This is the *Products* section of our DOMS-themed website. It showcases differen
 
 ### 🖼️ Preview:
 
-<img src="screenshorts/product-page.png" alt="Product Page" width="500px"/>
+<img src="screenshorts/productpagess.png" alt="Product Page" width="500px"/>
 
 ### 🔍 Categories Displayed:
 - ✏️ *Pencils & Accessories*
@@ -47,7 +47,7 @@ The *About Us* page introduces the legacy and vision of the founders of DOMS. It
 
 ### 🖼️ Preview:
 
-<img src="screenshorts/about-page.png" alt="About Page" width="500px"/>
+<img src="screenshorts/aboutpagess.png" alt="About Page" width="500px"/>
 
 
 ### 🙏 Highlights:
@@ -70,7 +70,7 @@ The *Brands* page highlights DOMS as the flagship brand and provides a detailed 
 
 ## 🏷️ Brands Page
 
-<img src="screenshorts/brands-page.png" alt="Brands Page" width="500px"/>
+<img src="screenshorts/brandspagess.png" alt="Brands Page" width="500px"/>
 
 ### 📌 Highlights:
 - Section Title: *Domestic Brands*
@@ -84,7 +84,7 @@ The *Contact Us* page allows users to get in touch with the DOMS team by filling
 
 ### 🖼️ Preview:
 
-<img src="screenshorts/contact-page.png" alt="Contact Page" width="500px"/>
+<img src="screenshorts/contactpagess.png" alt="Contact Page" width="500px"/>
 
 ### ✍️ Form Fields:
 - *Name*: Input box for the user's name.
