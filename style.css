@@ -585,23 +585,23 @@
     }
     .ig:hover{
       content: url(./images/instagram\ \(1\).png);
-      height: 27px;
-      width: 27px;
+      height: 26px;
+      width: 26px;
     }
      .fb:hover{
       content: url(./images/facebook\ \(1\).png);
-      height: 27px;
-      width: 27px;
+      height: 26px;
+      width: 26px;
     }
     .tw:hover{
       content: url(./images/twitter\ \(1\).png);
-      height: 27px;
-      width: 27px;
+      height: 26px;
+      width: 26px;
     }
     .yt:hover{
       content: url(./images/youtube\ \(1\).png);
-      height: 27px;
-      width: 27px;
+      height: 26px;
+      width: 26px;
     }
     .last-footer{
       position: absolute;
