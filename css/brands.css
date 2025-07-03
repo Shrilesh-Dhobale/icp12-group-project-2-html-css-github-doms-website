@@ -14,8 +14,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
+   animation: backgroundColorChange 20s ease-in-out infinite;
 }
+@keyframes backgroundColorChange {
+      0%   { background: #f3c1f3; }
+      25%  { background: #c1e0f3; }
+      50%  { background: #f3f3c1; }
+      75%  { background: #f3c1c1; }
+      100% { background: #f3c1f3; }
+    }
 
 .brands-page {
   width: 90%;

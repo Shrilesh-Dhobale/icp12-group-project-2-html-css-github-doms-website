@@ -6,7 +6,15 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
+  animation: backgroundColorChange 20s ease-in-out infinite;
 }
+@keyframes backgroundColorChange {
+      0%   { background: #f3c1f3; }
+      25%  { background: #c1e0f3; }
+      50%  { background: #f3f3c1; }
+      75%  { background: #f3c1c1; }
+      100% { background: #f3c1f3; }
+    }
 
 .navbar {
   background-color: #0a2a43;
@@ -133,6 +141,8 @@ body {
 
 .container {
   flex: 1;
+  
+  
 }
 
 .product-grid {
@@ -141,6 +151,7 @@ body {
   gap: 30px;
   max-width: 1200px;
   margin: auto;
+  
 }
 
 .card {
