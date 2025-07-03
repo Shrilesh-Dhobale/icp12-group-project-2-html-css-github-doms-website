@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f3f4f6, #dfe9f3);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: #0a2a43;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      color: #ffffff;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: #ffc107;
+      border-bottom: 2px solid #ffc107;
+      padding-bottom: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+
+    .form-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .register-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .register-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #fdfdfd;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #0078A0;
+      outline: none;
+    }
+
+    .register-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #0078A0;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .register-btn:hover {
+      background-color: #005f7a;
+      transform: scale(1.02);
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-link a {
+      color: #0078A0;
+      text-decoration: none;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 500px) {
+      .register-container {
+        padding: 30px 20px;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #0a2a43;
+      color: #ffffff;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      border-top: 1px solid #1f3c5a;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      color: #cccccc;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      background: #f1f1f1;
+      padding: 8px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">DOMS</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="./about.html" class="active">About Us</a></li>
+          <li><a href="./product/product.html">Products</a></li>
+          <li><a href="./brands/brands.html">Brands</a></li>
+          <li><a href="./contact/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="form-wrapper">
+    <div class="register-container">
+      <h2>Create Account</h2>
+      <form>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required />
+
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" name="confirm" placeholder="Re-enter password" required />
+
+        <button type="submit" class="register-btn">Register</button>
+
+        <div class="login-link">
+          Already have an account? <a href="#">Login here</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <img src="./../images/youtube.png" alt="YouTube" />
+      <img src="./../images/facebook.png" alt="Facebook" />
+      <img src="./../images/instagram (1).png" alt="Instagram" />
+      <img src="./../images/twitter (1).png" alt="Twitter" />
+      <img src="./../images/whatsapp.png" alt="WhatsApp" />
+    </div>
+    <div class="footer-container">
+      <p>&copy; 2025 DOMS. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
