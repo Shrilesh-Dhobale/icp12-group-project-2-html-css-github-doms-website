@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +16,6 @@ body {
       100% { background: #f3c1f3; }
     }
 
-/* Navbar */
 .navbar {
   background-color: #0a2a43;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
@@ -36,7 +34,6 @@ body {
   align-items: center;
 }
 
-/* Logo */
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -44,7 +41,6 @@ body {
   text-decoration: none;
 }
 
-/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -81,9 +77,6 @@ body {
   color: #ffc107;
 }
 
-
-
-/* Header */
 .header {
   height: 150px;
   background-image: url('../../images/header_img.png');
@@ -103,7 +96,6 @@ body {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* Dropdown */
 .dropdown {
   text-align: center;
   margin-bottom: 30px;
@@ -116,13 +108,11 @@ body {
   border: 1px solid #ccc;
 }
 
-/* Layout */
 .main {
   display: flex;
   gap: 30px;
 }
 
-/* Sidebar */
 .sidebar {
   width: 250px;
   background-color: #f9f9f9;
@@ -149,14 +139,12 @@ body {
   cursor: pointer;
 }
 
-/* Main content */
 .container {
   flex: 1;
   
   
 }
 
-/* Product Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -220,7 +208,83 @@ body {
   padding: 40px 20px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
   color: white;
-  
+
+}
+
+.section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  background-color: rgb(255, 243, 226);
+  border-radius: 10px;
+  padding: 15px;
+
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 4px;
+}
+
+.why-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+  background-color: #f1f1f1;
+  border-radius: 10px 70px;
+  padding-top: 10px;
+}
+
+.why-title {
+  flex: 1;
+  text-align: center;
+}
+
+.why-title h3 {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.why-content {
+  flex: 2;
+}
+
+.why-block {
+  margin-bottom: 30px;
+}
+
+.why-block h4 {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.why-block p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .social-icons {
@@ -249,7 +313,7 @@ body {
   text-align: center;
   color: white;
 }
-/* Responsive Design */
+
 @media (max-width: 900px) {
   .main {
     flex-direction: column;
