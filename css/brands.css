@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+
 }
 
 body {
@@ -14,10 +14,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  
+
 }
 
-/* Main container */
 .brands-page {
   width: 90%;
   max-width: 1200px;
@@ -28,10 +27,10 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   animation: fadeSlideUp 1s ease-out;
 }
-/* --- NAVIGATION BAR --- */
+
 .navbar {
-  background-color: #0a2a43; 
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); 
+  background-color: #0a2a43;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -49,7 +48,7 @@ body {
 .logo {
   font-size: 26px;
   font-weight: 700;
-  color: #ffffff; /* Light text for contrast */
+  color: #ffffff;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -64,19 +63,17 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  color: #ffffff; /* White links */
+  color: #ffffff;
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
-  color: #ffc107; /* Golden-yellow hover color */
+  color: #ffc107;
   border-bottom: 2px solid #ffc107;
   padding-bottom: 2px;
 }
 
-
-/* Responsive */
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -90,8 +87,6 @@ body {
   }
 }
 
-
-/* DAS Page Styling */
 .das-page {
   width: 90%;
   max-width: 1200px;
@@ -133,7 +128,6 @@ body {
   padding-top: 20px;
 }
 
-/* Common layout for individual brand pages */
 .das-page,
 .container {
   width: 90%;
@@ -147,8 +141,8 @@ body {
   text-align: center;
 }
 
-/* Adjust for smaller screens */
 @media (max-width: 768px) {
+
   .das-page,
   .container {
     width: 95%;
@@ -169,12 +163,12 @@ body {
   color: #004d5f;
 }
 
-/* Animations */
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -186,14 +180,15 @@ body {
     opacity: 0;
     transform: scale(0.95);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-/* Brand titles */
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   margin-bottom: 20px;
   animation: fadeSlideUp 1s ease-in-out;
@@ -207,7 +202,6 @@ h1, h2 {
   text-align: center;
 }
 
-/* Brand logo */
 .brand-logo {
   display: block;
   max-width: 200px;
@@ -216,7 +210,6 @@ h1, h2 {
   animation: fadeSlideUp 1.2s ease-out;
 }
 
-/* Sub-brands */
 .sub-brands {
   display: flex;
   flex-wrap: wrap;
@@ -245,7 +238,6 @@ h1, h2 {
   margin: 0 auto 15px auto;
 }
 
-/* International Brands Section */
 .intl-brands {
   display: flex;
   justify-content: center;
@@ -269,10 +261,8 @@ h1, h2 {
   transform: scale(1.05);
 }
 
-
-/* --- FOOTER --- */
 .footer {
-  background-color: #0a2a43; /* Same dark blue as navbar */
+  background-color: #0a2a43;
   color: #ffffff;
   padding: 30px 0;
   text-align: center;
@@ -316,9 +306,6 @@ h1, h2 {
   transform: scale(1.1);
 }
 
-
-
-/* Responsive */
 @media (max-width: 768px) {
   .brands-page {
     width: 95%;
