@@ -166,12 +166,12 @@ iframe {
   transform: scale(1.1);
 }
 
-/* Animations */
 @keyframes fadeDown {
   from {
     transform: translateY(-20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -183,6 +183,7 @@ iframe {
     transform: translateY(40px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -194,6 +195,7 @@ iframe {
     transform: scale(0.95);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -204,6 +206,7 @@ iframe {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -214,14 +217,15 @@ iframe {
     opacity: 0;
     transform: scale(0.95);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
+
   .p1,
   .p3,
   .team-continer,
