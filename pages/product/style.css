@@ -152,8 +152,8 @@ body {
 /* Main content */
 .container {
   flex: 1;
-  margin-left: 19%;
-  margin-top: -27%;
+  
+  
 }
 
 /* Product Grid */
@@ -162,7 +162,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1200px;
-  
+  margin: auto;
   
 }
 
