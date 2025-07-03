@@ -24,13 +24,8 @@ body {
 
 .navbar {
   text-align: center;
-  background-color: antiquewhite;
   padding: 15px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 25px;
-}
-
-.navbar {
   background-color: #0a2a43;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   position: sticky;
@@ -50,7 +45,6 @@ body {
 .logo {
   font-size: 26px;
   font-weight: 700;
-  color: #ffffff;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -98,6 +92,57 @@ body {
   border-bottom: 2px solid #ff6600;
 }
 
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: none;
+  }
+
+  .navbar a {
+    padding-right: 0;
+  }
+
+  .navbar h4 {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 8px 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links li a {
+    font-size: 15px;
+  }
+
+  .navbar h4 {
+    font-size: 16px;
+  }
+}
 .main-heading {
   text-align: center;
   font-size: 36px;
