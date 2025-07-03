@@ -174,7 +174,33 @@ iframe {
   
 }
 
+.member-name{
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  right: 63px;
+  top: 95px;
+}
 
+.spacific-name{
+  right: 50px;
+}
+
+.spacific-name-1{
+  right: 80px;
+}
+
+.member-specification{
+  font-size: 20px;
+  position: absolute;
+  right: 80px;
+  top: 130px;
+
+}
+
+.specific-1{
+  right: 99px;
+}
 
 .footer {
   background: #0a2a43;
