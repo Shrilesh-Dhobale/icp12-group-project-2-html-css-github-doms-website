@@ -1,0 +1,633 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   
+    .cloud-img{
+      height:100vh;
+      width: 100vw;
+      margin: 0;
+      background-repeat: repeat;
+      background-size: 50% 50%;
+      background-position: top left;
+      opacity: 0;
+      animation: fadeSlide 10s infinite;
+    }
+    @keyframes fadeSlide{
+      0%{
+        content: url(./images/cloud-img-1.jpg);
+        opacity:0.5;
+      }
+      25%{
+        content: url(./images/cloud-img-2.jpg);
+        opacity: 0.5;
+      }
+      50%{
+        content: url(./images/cloud-img-3.jpg);
+        opacity: 0.5;
+      }
+      75%{
+        content: url(./images/cloud-img-4.jpg);
+        opacity: 0.5;
+      }
+      100%{
+        content: url(./images/cloud-img-5.jpg);
+        opacity: 0.5;
+      }
+    }
+    
+    .logo{
+      position: absolute;
+      top:5px;
+      left:5px;
+      font-size: 20px;
+    }
+    .logo-smile{
+      height:15px;
+      width:15px;
+      
+    }
+    .navbar{
+      position: absolute;
+      top:5px;
+      right:5px;
+       width:50%;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+    }
+    
+    .navbar a{
+      text-decoration: none;
+      color:black;
+      
+    }
+    .diary-icon{
+      position:absolute;
+      height:80px;
+      top:100px;
+      left:300px;
+       rotate: -20deg;
+       animation: movediary 1.5s ease-in-out infinite;
+    }
+    @keyframes movediary{
+      0%{
+        top:100px;
+      }
+      50%{
+        top:120px;
+      }
+      100%{
+        top:100px;
+      }
+    }
+    .pencil-icon{
+      height:200px;
+      position: absolute;
+      top:250px;
+      left:40%;
+      animation: movePencil 1.5s ease-in-out infinite;
+      animation: movelinearPencil 5s linear infinite;
+    }
+    @keyframes movelinearPencil{
+      0%{
+        left:40%;
+      }
+      100%{
+        left:60%;
+      }
+    }
+    @keyframes movePencil{
+      0%{
+        top:250px;
+      }
+      50%{
+        top:270px;
+      }
+      100%{
+        top:250px;
+      }
+    }
+    .main-heading{
+      position: absolute;
+      top:200px;
+      left:25%;
+      font-size: 250px;
+       text-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+        letter-spacing: -8px;
+    }
+    .gear-icon{
+      position: absolute;
+      height: 200px;
+      right:150px;
+      bottom:100px;
+      animation: rotategear 5s linear infinite;
+    }
+    @keyframes rotategear{
+      0%{
+        transform: rotate(0deg);
+      }
+      25%{
+        transform: rotate(60deg);
+      }
+      50%{
+        transform: rotate(0deg);
+      }
+      75%{
+        transform: rotate(-60deg);
+      }
+    }
+    .brush-icon{
+      position: absolute;
+      height: 80px;
+      bottom: 100px;
+      left:20%;
+       animation: moveBrush 1.5s ease-in-out infinite;
+    
+    }
+     @keyframes moveBrush{
+      0%{
+        bottom:100px;
+      }
+      50%{
+        bottom:80px;
+      }
+      100%{
+        bottom:100px;
+      }
+    }
+    .gear-text{
+      position: absolute;
+      bottom:180px;
+      right:213px;
+      
+    }
+     
+     .main-quote{
+      font-family: cursive;
+      position: absolute;
+      top:62%;
+      left:40%;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+     }
+     @media  screen and (min-width: 768px) and (max-width: 992px) {
+      .logo{
+        font-size: 15px;
+      }
+      .logo-smile{
+        height:12px;
+      }
+      .navbar{
+        width:45%;
+      }
+      .diary-icon{
+        height:70px;
+        left:120px;
+      }
+      .main-heading{
+        font-size: 180px;
+        left:15%;
+      }
+      .gear-icon{
+        right:120px;
+        height: 150px;
+        bottom:150px;
+      }
+      .gear-text{
+        right:160px;
+        font-size: 15px;
+        bottom:210px;
+      }
+      .main-quote{
+        left:30%;
+        top:55%;
+      }
+      .pencil-icon{
+        height:150px;
+      }
+      .brush-icon{
+        height: 65px;
+        left:10%;
+        top:30%;
+      }
+    }
+    @media  screen and (min-width: 600px) and (max-width: 768px) {
+      .logo{
+        font-size: 15px;
+      }
+      .logo-smile{
+        height:10px;
+      }
+      .navbar{
+        font-size: 12px;
+        width:50%;
+      }
+      .diary-icon{
+        height:50px;
+        left:100px;
+      }
+      .main-heading{
+        font-size: 130px;
+        left:15%;
+      }
+      .gear-icon{
+        right:80px;
+        height: 150px;
+        bottom:200px;
+      }
+      .gear-text{
+        right:133px;
+        font-size: 15px;
+        bottom:260px;
+        font-size: 12px;
+      }
+      .main-quote{
+        left:25%;
+        top:47%;
+        font-size: 15px;
+      }
+      .pencil-icon{
+        height:100px;
+        top:230px;
+      }
+      .brush-icon{
+        height: 65px;
+        left:10%;
+        bottom:200px;
+      }
+    }
+    .note{
+      position: relative;
+      top:-5px;
+      background-color: aqua;
+      overflow: hidden;
+      width:100%;
+      white-space: nowrap;
+      animation: bgChange 10s ease-in-out infinite;
+    }
+    @keyframes bgChange{
+      0%{
+        background-color: aqua;
+      }
+      25%{
+        background-color: lightblue;
+      }
+      50%{
+        background-color: lightgreen;
+      }
+      75%{
+        background-color: lightpink;
+      }
+      100%{
+        background-color: aqua;
+      }
+    }
+    .note-text{
+      display: inline-block;
+      padding-left: 100%;
+      animation: marque 30s linear infinite;
+    }
+    @keyframes marque{
+      0%{
+        transform:translateX(0%);
+      }
+      100%{
+        transform:translateX(-100%);
+      }
+    }
+    .product{
+      animation: backgroundColorChange 20s ease-in-out infinite;
+      position: relative;
+      top:-5px;
+      height: 100vh;
+      width:100wv;
+    }
+     @keyframes backgroundColorChange {
+      0%   { background: #f3c1f3; }
+      25%  { background: #c1e0f3; }
+      50%  { background: #f3f3c1; }
+      75%  { background: #f3c1c1; }
+      100% { background: #f3c1f3; }
+    }
+    .product h2{
+      padding-top:50px;
+      padding-left: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      color:cadetblue;
+      animation: fadeProd 9s ease-in-out;
+    }
+    @keyframes fadeProd{
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
+    #See-all{
+      position: absolute;
+      top:100px;
+      right:80px;
+      text-decoration: none;
+      color: white;
+      background-color: grey;
+      border-radius: 30%;
+      padding:5px 10px;
+    }
+    #product-cards-1{
+      
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+      
+    }
+    #product-cards-2{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+    .card{
+      height: 240px;
+      width: 220px;
+      border: 2px solid gray;
+      border-radius: 5px;
+      background-color:burlywood;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+    }
+    .card:hover{
+     
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    .card a{
+      display: block;
+      text-decoration: none;
+      
+    }
+    
+    .card img{
+      display: block;
+      border-radius: 5px;
+    }
+    .card h4{
+      font-family: cursive;
+    }
+  #blue-pencil{
+    animation: changePencil 8s infinite;
+    
+  }
+  @keyframes changePencil{
+    0%{
+      content: url(./images/blue.jpg);
+      opacity: 0.7;
+    }
+    100%{
+      content: url(./images/pencil.jpg);
+    }
+  }
+  #violet-color{
+    animation:changeColCard 8s infinite;
+  }
+  @keyframes changeColCard{
+    0%{
+      content: url(./images/violet.jpg);
+      opacity: 0.7;
+    }
+    100%{
+      content: url(./images/drawingandcolouring.jpg);
+    }
+  }
+  #yellow-draw{
+    animation:changeDrawCard 8s infinite;
+  }
+  @keyframes changeDrawCard{
+    0%{
+      content: url(./images/yellow.jpg);
+      opacity: 0.7;
+    }
+    100%{
+      content: url(./images/craft.jpg);
+    }
+  }
+  #pink-craft{
+    animation:changeCraftCard 8s infinite;
+  }
+  @keyframes changeCraftCard{
+    0%{
+      content: url(./images/pink.jpg);
+      opacity: 0.7;
+    }
+    100%{
+      content: url(./images/paintbrush.jpg);
+    }
+  }
+  #red-pen{
+    animation:changePenCard 8s infinite;
+  }
+  @keyframes changePenCard{
+    0%{
+      content: url(./images/red.jpg);
+      opacity: 0.7;
+    }
+    100%{
+      content: url(./images/pens.jpg);
+    }
+  }
+  #orange-hobby{
+    animation:changeHobbyCard 8s infinite;
+  }
+  @keyframes changeHobbyCard{
+    0%{
+      content: url(./images/orange.jpg);
+      opacity: 0.7;
+    }
+    100%{
+      content: url(./images/marker.jpg);
+    }
+  }
+   #brown-gift{
+    animation:changeGiftCard 8s infinite;
+  }
+  @keyframes changeGiftCard{
+    0%{
+      content: url(./images/light-brown.jpg);
+      opacity: 0.7;
+    }
+    100%{
+      content: url(./images/gift.jpg);
+    }
+  }
+  #green-stationary{
+    animation:changePaperCard 8s infinite;
+  }
+  @keyframes changePaperCard{
+    0%{
+      content: url(./images/green.jpg);
+      opacity: 0.7;
+    }
+    100%{
+      content: url(./images/paper\ stationary.jpg);
+    }
+  }
+  @media  screen and (min-width:768px) and (max-width:992px) {
+    .card{
+      width:180px;
+    }
+    .card img{
+      width:160px;
+    }
+    .card h4{
+      font-size: 14px;
+    }
+  }
+  
+  .footer{
+    animation: backgroundColorChange 20s ease-in-out infinite;
+      position: relative;
+      top:-5px;
+      height: 70vh;
+      width:100wv;
+  }
+  @keyframes backgroundColorChange {
+      0%   { background: #f3c1f3; }
+      25%  { background: #c1e0f3; }
+      50%  { background: #f3f3c1; }
+      75%  { background: #f3c1c1; }
+      100% { background: #f3c1f3; }
+    }
+    .courage{
+      position: absolute;
+      height:150px;
+      width: 100px;
+       rotate: 20deg;
+       left:160px;
+       z-index: 1;
+       top:100px;
+
+    }
+    .footer-content{
+      position: absolute;
+      width:70%;
+      height:70%;
+      background-color: white;
+      left:15%;
+      top:100px;
+      box-shadow: 2px 8px 20px rgba(0,0,0,0.3);
+      border-radius: 8px;
+    }
+    .input-footer{
+      position: absolute;
+      outline: none;
+      
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    .footer-btn{
+      margin-left:80%;
+      margin-top:40px;
+      padding-left:20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color:orchid;
+      border:none;
+      border-radius: 2px;
+      font-family: fantasy;
+      cursor: pointer;
+    }
+    .footer-content-line{
+      width:90%;
+      margin-left: 5%;
+    }
+    .content-col-1{
+      position: absolute;
+      padding-left:100px;
+      padding-top: 50px;
+      line-height: 1.6;
+
+    }
+    .content-col-1 a{
+      text-decoration: none;
+      color: black;
+    }
+    .content-col-2{
+      position: absolute;
+      padding-left:400px;
+      padding-top: 50px;
+      line-height: 1.6;
+    }
+    .content-col-2 a{
+       text-decoration: none;
+      color: black;
+    }
+    .content-col-3{
+       position: absolute;
+      padding-left:700px;
+      padding-top: 50px;
+      line-height: 1.6;
+    }
+    .content-col-3 a{
+       text-decoration: none;
+      color: black;
+    }
+    
+   .social-media{
+    position: absolute;
+    bottom:40px;
+    left:40%;
+    display: flex;
+    gap:20px;
+    text-shadow: 2px 2px 5px gray;
+    cursor: pointer;
+    }
+    .ig:hover{
+      content: url(./images/instagram\ \(1\).png);
+      height: 27px;
+      width: 27px;
+    }
+     .fb:hover{
+      content: url(./images/facebook\ \(1\).png);
+      height: 27px;
+      width: 27px;
+    }
+    .tw:hover{
+      content: url(./images/twitter\ \(1\).png);
+      height: 27px;
+      width: 27px;
+    }
+    .yt:hover{
+      content: url(./images/youtube\ \(1\).png);
+      height: 27px;
+      width: 27px;
+    }
+    .last-footer{
+      position: absolute;
+      top:95%;
+      left:45%;
+      font-size: 12px;
+    }
+    @media screen and (min-width:768px) and (max-width:992px){
+      .courage{
+        height:120px;
+        width:70px;
+        left:100px;
+      }
+      .content-col-1{
+        padding-left: 60px;
+      }
+      .content-col-2{
+        padding-left: 300px;
+      }
+      .content-col-3{
+        padding-left: 500px;
+      }
+      .footer-btn{
+        margin-left: 70%;
+      }
+      .last-footer{
+        left: 42%;
+      }
+    }
