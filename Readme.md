@@ -8,7 +8,7 @@ The *Home Page* serves as the entry point of the DOMS website. It features the b
 
 ### 🖼️ Preview:
 
-<img src="screenshorts/home-page.png" alt="Home Page" width="500px"/>
+<img src="screenshorts/homepagess.png" alt="Home Page" width="500px"/>
 
 
 ### 🔗 Navigation Includes:
