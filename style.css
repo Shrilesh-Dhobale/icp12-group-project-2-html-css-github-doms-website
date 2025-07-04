@@ -56,11 +56,16 @@
       display: flex;
       justify-content: space-between;
       padding: 15px;
+      
     }
     
     .navbar a{
       text-decoration: none;
       color:black;
+      font-family:cursive;
+      
+    }
+    .header-content{
       
     }
     .diary-icon{

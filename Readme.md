@@ -2,16 +2,14 @@
 
 The *Home Page* serves as the entry point of the DOMS website. It features the brand's logo, a welcoming design, and navigation links to major sections.
 
-### 📄 File Location:
+### 📄 Live website:
 
-index.html
+(https://domswebsite.netlify.app/)
 
 ### 🖼️ Preview:
 
 <img src="screenshorts/home-page.png" alt="Home Page" width="500px"/>
 
-
-> (Save this screenshot as home-page.png inside a screenshots/ folder.)
 
 ### 🔗 Navigation Includes:
 - About Us
@@ -29,15 +27,11 @@ index.html
 - Colorful, kid-friendly look & feel.
 - Designed with beginner-friendly HTML and CSS.# ## 🛒 Products Page
 This is the *Products* section of our DOMS-themed website. It showcases different product categories offered by the brand.
-### 📄 File Location:
 
-pages/product/product.html
 
 ### 🖼️ Preview:
 
 <img src="screenshorts/product-page.png" alt="Product Page" width="500px"/>
-
-> (Make sure to save the screenshot as products-page.png inside a screenshots/ folder in your project.)
 
 ### 🔍 Categories Displayed:
 - ✏️ *Pencils & Accessories*
@@ -48,18 +42,13 @@ pages/product/product.html
 ## 📖 About Us Page
 
 
-
 The *About Us* page introduces the legacy and vision of the founders of DOMS. It honors the pioneers who laid the foundation for the brand's excellence.
 
-### 📄 File Location:
-
-pages/about.html
 
 ### 🖼️ Preview:
 
 <img src="screenshorts/about-page.png" alt="About Page" width="500px"/>
 
-> (Save the screenshot as about-page.png in the screenshots/ folder.)
 
 ### 🙏 Highlights:
 - Inspirational message:  
@@ -79,15 +68,9 @@ pages/about.html
 - Section: *Infrastructure of DOMS*
 The *Brands* page highlights DOMS as the flagship brand and provides a detailed overview of its quality, values, and offerings.
 
-### 📄 File Location:
-
-pages/brands/brands.html
-
-
 ## 🏷️ Brands Page
 
 <img src="screenshorts/brands-page.png" alt="Brands Page" width="500px"/>
-> (Save the screenshot as brands-page.png inside the screenshots/ folder.)
 
 ### 📌 Highlights:
 - Section Title: *Domestic Brands*
@@ -95,22 +78,13 @@ pages/brands/brands.html
 - Tagline: "Every Ambition Needs Preparation"
 - Description of the brand's:
   
-### 📄 File Location:
-
-pages/about.html
 # 📞 Contact Us Page
 
 The *Contact Us* page allows users to get in touch with the DOMS team by filling out a simple form.
 
-### 📄 File Location:
-
-pages/contact.html
-
 ### 🖼️ Preview:
 
 <img src="screenshorts/contact-page.png" alt="Contact Page" width="500px"/>
-
-> (Save this screenshot as contact-page.png inside a screenshots/ folder.)
 
 ### ✍️ Form Fields:
 - *Name*: Input box for the user's name.
@@ -125,9 +99,9 @@ pages/contact.html
 We are a group of passionate developers collaborating on innovative web and software projects. Each of us brings unique skills in HTML, CSS, Java, and Python. Explore our GitHub profiles and repositories to see our work!
 
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/207746713?v=4" width="100" height="100" style="border-radius: 50%;" />
-  <img src="https://avatars.githubusercontent.com/u/199504084?v=4" width="100" height="100" style="border-radius: 50%;" />
-  <img src="https://avatars.githubusercontent.com/u/106259491?v=4" width="100" height="100" style="border-radius: 50%;" />
-  <img src="https://avatars.githubusercontent.com/u/106259611?v=4" width="100" height="100" style="border-radius: 50%;" />
-  <img src="https://avatars.githubusercontent.com/u/108413050?v=4" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/manas.jpeg" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/vaishnavi.jpeg" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/maithily.jpg" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/shreya.jpg" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./images/shrilesh.jpg" width="100" height="100" style="border-radius: 50%;" />
 </p>
