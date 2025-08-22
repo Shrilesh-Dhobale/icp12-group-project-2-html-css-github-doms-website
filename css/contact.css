@@ -22,32 +22,21 @@ body {
       100% { background: #f3c1f3; }
     }
 
-.navbar {
-  text-align: center;
-  padding: 15px 0;
-  margin-bottom: 25px;
-  background-color: #0a2a43;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 26px;
-  font-weight: 700;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
+.navbar{
+      position: absolute;
+      top:5px;
+      right:5px;
+       width:50%;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+    }
+    
+    .navbar a{
+      text-decoration: none;
+      color:black;
+      
+    }
 
 .nav-links {
   list-style: none;
