@@ -42,6 +42,18 @@ body {
     background: #f3c1f3;
   }
 }
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .logo {
   font-size: 26px;
