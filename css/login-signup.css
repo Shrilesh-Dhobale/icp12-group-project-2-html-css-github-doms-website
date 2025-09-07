@@ -65,4 +65,8 @@ h1 {
     cursor: pointer;
     font-size: 14px;
   }
+  .facebook { background: #3b5998; }
+  .twitter { background: #1da1f2; }
+  .google { background: #db4437; }
+
 
