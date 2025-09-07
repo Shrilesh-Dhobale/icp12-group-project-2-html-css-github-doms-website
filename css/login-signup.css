@@ -68,5 +68,17 @@ h1 {
   .facebook { background: #3b5998; }
   .twitter { background: #1da1f2; }
   .google { background: #db4437; }
+   
+  .or {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-weight: bold;
+  }
 
 
