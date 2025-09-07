@@ -34,3 +34,6 @@ document.getElementById('signUp').addEventListener('click', (e) => {
           email: email
         });
         showToast("✅ Account created successfully! Please login.");
+         document.getElementById('signup-form').style.display = 'none';
+        document.getElementById('login-form').style.display = 'block';
+      })
