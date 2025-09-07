@@ -40,3 +40,9 @@ document.getElementById('signUp').addEventListener('click', (e) => {
       .catch((error) => {
         showToast("❌ " + error.message, false);
       });
+});
+document.getElementById('loginBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
