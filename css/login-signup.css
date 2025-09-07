@@ -40,3 +40,6 @@ h1 {
     cursor: pointer;
     transition: background 0.3s;
   }
+   input[type="submit"]:hover {
+    background: #1a5cd8;
+  }
