@@ -43,3 +43,8 @@ h1 {
    input[type="submit"]:hover {
     background: #1a5cd8;
   }
+   .right {
+    padding: 30px;
+    flex: 1;
+    background: #f9f9f9;
+  }
