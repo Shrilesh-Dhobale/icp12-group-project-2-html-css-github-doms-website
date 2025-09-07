@@ -46,3 +46,11 @@ document.getElementById('loginBtn').addEventListener('click', (e) => {
 
     const email = document.getElementById('loginEmail').value;
     const password = document.getElementById('loginPassword').value;
+
+     signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        showToast("✅ Login successful!");
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 2000);
+      })
