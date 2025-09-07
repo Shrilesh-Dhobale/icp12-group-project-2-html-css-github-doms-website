@@ -33,3 +33,4 @@ document.getElementById('signUp').addEventListener('click', (e) => {
           username: username,
           email: email
         });
+        showToast("✅ Account created successfully! Please login.");
