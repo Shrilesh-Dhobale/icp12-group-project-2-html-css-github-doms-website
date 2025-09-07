@@ -54,3 +54,6 @@ document.getElementById('loginBtn').addEventListener('click', (e) => {
           window.location.href = "index.html";
         }, 2000);
       })
+       .catch((error) => {
+        showToast("❌ " + error.message, false);
+      });
