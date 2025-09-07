@@ -37,3 +37,6 @@ document.getElementById('signUp').addEventListener('click', (e) => {
          document.getElementById('signup-form').style.display = 'none';
         document.getElementById('login-form').style.display = 'block';
       })
+      .catch((error) => {
+        showToast("❌ " + error.message, false);
+      });
