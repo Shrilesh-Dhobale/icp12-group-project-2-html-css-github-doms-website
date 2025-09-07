@@ -33,3 +33,10 @@ h1 {
     border-radius: 8px;
     font-size: 14px;
   }
+  input[type="submit"] {
+    background: #2575fc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
