@@ -57,3 +57,4 @@ document.getElementById('loginBtn').addEventListener('click', (e) => {
        .catch((error) => {
         showToast("❌ " + error.message, false);
       });
+});
