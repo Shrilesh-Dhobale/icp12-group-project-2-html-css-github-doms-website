@@ -48,3 +48,10 @@ h1 {
     flex: 1;
     background: #f9f9f9;
   }
+   .loginwith {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
