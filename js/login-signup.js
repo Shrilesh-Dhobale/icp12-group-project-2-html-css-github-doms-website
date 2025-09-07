@@ -3,3 +3,13 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase
 import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
  
+const firebaseConfig = {
+    apiKey: "AIzaSyAWS9lGO5qId8_qudQyBnvbCKOdh1y74tQ",
+    authDomain: "doms-4fdf1.firebaseapp.com",
+    databaseURL: "https://doms-4fdf1-default-rtdb.firebaseio.com",
+    projectId: "doms-4fdf1",
+    storageBucket: "doms-4fdf1.appspot.com",
+    messagingSenderId: "127515121312",
+    appId: "1:127515121312:web:71cd8317c51f5672f8dbc5",
+    measurementId: "G-R0EFFCEW7Z"
+  };
