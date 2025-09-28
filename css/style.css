@@ -56,6 +56,9 @@
       display: flex;
       justify-content: space-between;
       padding: 15px;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
     }
     
     .navbar a{
@@ -409,103 +412,7 @@
     .card h4{
       font-family: cursive;
     }
-  #blue-pencil{
-    animation: changePencil 8s infinite;
-    
-  }
-  @keyframes changePencil{
-    0%{
-      content: url(../images/blue.jpg);
-      opacity: 0.7;
-    }
-    100%{
-      content: url(../images/pencil.jpg);
-    }
-  }
-  #violet-color{
-    animation:changeColCard 8s infinite;
-  }
-  @keyframes changeColCard{
-    0%{
-      content: url(./images/violet.jpg);
-      opacity: 0.7;
-    }
-    100%{
-      content: url(./images/drawingandcolouring.jpg);
-    }
-  }
-  #yellow-draw{
-    animation:changeDrawCard 8s infinite;
-  }
-  @keyframes changeDrawCard{
-    0%{
-      content: url(./images/yellow.jpg);
-      opacity: 0.7;
-    }
-    100%{
-      content: url(./images/craft.jpg);
-    }
-  }
-  #pink-craft{
-    animation:changeCraftCard 8s infinite;
-  }
-  @keyframes changeCraftCard{
-    0%{
-      content: url(./images/pink.jpg);
-      opacity: 0.7;
-    }
-    100%{
-      content: url(./images/paintbrush.jpg);
-    }
-  }
-  #red-pen{
-    animation:changePenCard 8s infinite;
-  }
-  @keyframes changePenCard{
-    0%{
-      content: url(./images/red.jpg);
-      opacity: 0.7;
-    }
-    100%{
-      content: url(./images/pens.jpg);
-    }
-  }
-  #orange-hobby{
-    animation:changeHobbyCard 8s infinite;
-  }
-  @keyframes changeHobbyCard{
-    0%{
-      content: url(./images/orange.jpg);
-      opacity: 0.7;
-    }
-    100%{
-      content: url(./images/marker.jpg);
-    }
-  }
-   #brown-gift{
-    animation:changeGiftCard 8s infinite;
-  }
-  @keyframes changeGiftCard{
-    0%{
-      content: url(./images/light-brown.jpg);
-      opacity: 0.7;
-    }
-    100%{
-      content: url(./images/gift.jpg);
-    }
-  }
-  #green-stationary{
-    animation:changePaperCard 8s infinite;
-  }
-  @keyframes changePaperCard{
-    0%{
-      content: url(./images/green.jpg);
-      opacity: 0.7;
-    }
-    100%{
-      content: url(./images/paper\ stationary.jpg);
-    }
-  }
+  
   @media  screen and (min-width:768px) and (max-width:992px) {
     .card{
       width:180px;
@@ -724,4 +631,4 @@
       
       margin-top: 40px;
       margin-left: 50px;
-    }
+      }
